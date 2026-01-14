@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalTime | World Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Global<span>Time</span></h1>
+            <div class="controls">
+                <button id="formatToggle" class="btn-secondary">Switch to 24h</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="search-box">
+                <input type="text" id="cityInput" placeholder="Search city or country (e.g. Tokyo, London)...">
+                <button id="searchBtn" class="btn-primary">Search</button>
+            </section>
+
+            <section id="clockDisplay" class="clock-card fade-in">
+                <h2 id="locationName">Local Time (Your Location)</h2>
+                <div id="timeValue" class="time-text">00:00:00</div>
+                <div id="dateValue" class="date-text">Monday, January 1, 2026</div>
+            </section>
+
+            <section class="recent-searches">
+                <h3>Recent Searches</h3>
+                <div id="recentList" class="recent-grid">
+                    </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
